@@ -5,13 +5,19 @@ export default function handler(req, res) {
 
   const name = `Crypto Dev ${tokenId}`;
   const description = "CryptoDevs is an NFT collection for Web3 Developers";
-  const image = `https://raw.githubusercontent.com/LearnWeb3DAO/NFT-Collection/main/my-app/public/cryptodevs/${
-    Number(tokenId) - 1
-  }.svg`;
+  const image = `https://0xwagminft.vercel.app/api/${Number(tokenId) - 1}.svg`;
 
-  res.status(200).json({
-    name: name,
-    description: description,
-    image: image,
-  });
+  if (Number(tokenId) == 1) {
+    res.status(200).json({
+      name: name,
+      description: description,
+      image: "https://0xwagminft.vercel.app/api/0.png",
+    });
+  } else {
+    res.status(200).json({
+      name: name,
+      description: description,
+      image: image,
+    });
+  }
 }
