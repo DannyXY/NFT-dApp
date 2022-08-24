@@ -222,6 +222,7 @@ export default function Home() {
         providerOptions: {},
         disableInjectedProvider: false,
       });
+
       onPageLoad();
     }
   }, [walletConnected]);
@@ -261,7 +262,7 @@ export default function Home() {
           </span>
           <div>
             <button onClick={presaleMint} className={styles.button}>
-              "Mint Now(0.01ETH)
+              Mint Now(0.01ETH)
             </button>
             ;
           </div>
@@ -277,7 +278,7 @@ export default function Home() {
           </span>
           <div>
             <button onClick={publicMint} className={styles.button}>
-              "Mint Now(0.01ETH)
+              Mint Now(0.01ETH)
             </button>
             ;
           </div>
