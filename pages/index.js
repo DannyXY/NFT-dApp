@@ -17,7 +17,7 @@ export default function Home() {
 
   async function getTokensMinted() {
     try {
-      const provider = getProviderOrSigner();
+      const provider = await getProviderOrSigner();
       const nftContract = new ethers.Contract(
         NFT_CONTRACT_ADDRESS,
         ABI,
