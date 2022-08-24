@@ -49,10 +49,10 @@ export default function Home() {
       await txn.wait();
 
       window.alert("You have successfully minted a Crypto Dev");
+      setLoading(false);
     } catch (error) {
       console.error(error);
       window.alert(error.message);
-      setLoading(false);
     }
     setLoading(false);
   }
@@ -257,15 +257,14 @@ export default function Home() {
     if (presaleStarted && !presaleEnded) {
       return (
         <div>
-          <span onClick={publicMint} className={styles.description}>
-            Presale Mint has started
-            <br /> Whitelist can mint with the button below
-          </span>
+          <div className={styles.description}>
+            <p>Presale Mint has started</p>
+            <p>Whitelist can mint with the button below</p>
+          </div>
           <div>
             <button onClick={presaleMint} className={styles.button}>
               Mint Now(0.01ETH)
             </button>
-            ;
           </div>
         </div>
       );
@@ -274,10 +273,10 @@ export default function Home() {
     if (presaleEnded) {
       return (
         <div>
-          <span className={styles.description}>
-            Public Mint has started
-            <br /> Everyone can mint with the button below
-          </span>
+          <div className={styles.description}>
+            <p>Public Mint has started</p>
+            <p>EveryOne can mint with the button below</p>
+          </div>
           <div>
             <button onClick={publicMint} className={styles.button}>
               Mint Now(0.01ETH)
