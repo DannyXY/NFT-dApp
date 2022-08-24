@@ -12,7 +12,7 @@ export default function Home() {
   const [presaleEnded, setPresaleEnded] = useState(false);
   const [isOwner, setIsOwner] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [tokenIdsMinted, setTokenIdsMinted] = useState("0");
+  const [tokenIdsMinted, setTokenIdsMinted] = useState(0);
   const web3ModalRef = useRef();
 
   async function getTokensMinted() {
@@ -48,10 +48,10 @@ export default function Home() {
 
       await txn.wait();
 
-      windows.alert("You have successfully minted a Crypto Dev");
+      window.alert("You have successfully minted a Crypto Dev");
     } catch (error) {
       console.error(error);
-      windows.alert(error.message);
+      window.alert(error.message);
       setLoading(false);
     }
     setLoading(false);
@@ -73,7 +73,7 @@ export default function Home() {
       });
       await txn.wait();
 
-      windows.alert("You have successfully minted a Crypto Dev");
+      window.alert("You have successfully minted a Crypto Dev");
     } catch (error) {
       console.error(error);
       setLoading(false);
@@ -258,7 +258,8 @@ export default function Home() {
       return (
         <div>
           <span onClick={publicMint} className={styles.description}>
-            Presale Mint has started, Whitelist can mint with the button below
+            Presale Mint has started
+            <br /> Whitelist can mint with the button below
           </span>
           <div>
             <button onClick={presaleMint} className={styles.button}>
@@ -274,13 +275,13 @@ export default function Home() {
       return (
         <div>
           <span className={styles.description}>
-            Public Mint has started, Everyone can mint with the button below
+            Public Mint has started
+            <br /> Everyone can mint with the button below
           </span>
           <div>
             <button onClick={publicMint} className={styles.button}>
               Mint Now(0.01ETH)
             </button>
-            ;
           </div>
         </div>
       );
