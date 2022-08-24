@@ -11,7 +11,15 @@ export default function handler(req, res) {
     res.status(200).json({
       name: name,
       description: description,
-      image: "https://0xwagminft.vercel.app/api/0.png",
+      image:
+        "https://res.cloudinary.com/dannyxyz/image/upload/v1660585225/20220523_204959_0000_blyun1.png",
+    });
+  }else if(Number(tokenID) == 2 ){
+    res.status(200).json({
+      name: name,
+      description: description,
+      image:
+        "https://res.cloudinary.com/dannyxyz/image/upload/v1660822520/IMG-20220818-WA0024_jbhqdi.jpg",
     });
   } else {
     res.status(200).json({
