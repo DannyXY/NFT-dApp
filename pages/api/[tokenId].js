@@ -14,7 +14,7 @@ export default function handler(req, res) {
       image:
         "https://res.cloudinary.com/dannyxyz/image/upload/v1660585225/20220523_204959_0000_blyun1.png",
     });
-  }else if(Number(tokenID) == 2 ){
+  }else if(Number(tokenId) == 2 ){
     res.status(200).json({
       name: name,
       description: description,
