@@ -16,15 +16,19 @@ export default function Home() {
   const web3ModalRef = useRef();
 
   async function getTokensMinted() {
-    const provider = getProviderOrSigner();
-    const nftContract = new ethers.Contract(
-      NFT_CONTRACT_ADDRESS,
-      ABI,
-      provider
-    );
+    try {
+      const provider = getProviderOrSigner();
+      const nftContract = new ethers.Contract(
+        NFT_CONTRACT_ADDRESS,
+        ABI,
+        provider
+      );
 
-    const _tokenIdsMinted = await nftContract.tokenIds();
-    setTokenIdsMinted(_tokenIdsMinted);
+      const _tokenIdsMinted = await nftContract.tokenIds();
+      setTokenIdsMinted(_tokenIdsMinted);
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   async function presaleMint() {
@@ -301,7 +305,7 @@ export default function Home() {
           {renderButton()}
         </div>
         <div>
-          <img className={styles.image} src="./cryptodevs/0.svg" />
+          <img className={styles.image} src="./cryptodevs/0.png" />
         </div>
       </div>
 
