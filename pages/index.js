@@ -12,7 +12,7 @@ export default function Home() {
   const [presaleEnded, setPresaleEnded] = useState(false);
   const [isOwner, setIsOwner] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [tokenIdsMinted, setTokenIdsMinted] = useState(0);
+  const [tokenIdsMinted, setTokenIdsMinted] = useState("0");
   const web3ModalRef = useRef();
 
   async function getTokensMinted() {
@@ -25,7 +25,7 @@ export default function Home() {
       );
 
       const _tokenIdsMinted = await nftContract.tokenIds();
-      setTokenIdsMinted(_tokenIdsMinted);
+      setTokenIdsMinted(_tokenIdsMinted.toString());
     } catch (error) {
       console.log(error);
     }
