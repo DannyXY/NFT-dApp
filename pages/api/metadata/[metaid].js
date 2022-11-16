@@ -234,7 +234,7 @@ const metadata = [
 export default function handler(req,res) {
   const metaId = req.query.metaId
   if(metaId) {
-    res.status(200).json(metadata[metaId-1]);
+    res.status(200).json(metadata[Number(metaId-1)]);
   } else {
     res.status(200).json(metadata)
   }
