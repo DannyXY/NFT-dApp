@@ -236,7 +236,7 @@ export default function handler(req,res) {
 //   if(metaId) {
 //     res.status(200).json(metadata[Number(metaId-1)]);
 //   } else {
-    res.status(200).json(metaId)
+    res.status(200).json({id: metaId, text: "please"})
 //   }
    
 }
