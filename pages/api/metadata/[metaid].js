@@ -232,11 +232,11 @@ const metadata = [
 ]
 
 export default function handler(req,res) {
-  const metaId = req.query.metaId
-//   if(metaId) {
-//     res.status(200).json(metadata[Number(metaId-1)]);
-//   } else {
+  const metaId = req.query.metaid
+  if(metaId) {
+    res.status(200).json(metadata[Number(metaId-1)]);
+  } else {
     res.status(200).json({id: metaId, text: "please"})
-//   }
+  }
    
 }
