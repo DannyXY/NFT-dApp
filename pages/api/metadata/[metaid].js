@@ -19,6 +19,10 @@ const metadata = [
             {
                 "trait_type": "Strength",
                 "value": 68
+            },
+            {
+                "trait_type": "Shape",
+                "value": "Rectangle"
             }
         ]
     },
@@ -42,6 +46,10 @@ const metadata = [
             {
                 "trait_type": "Strength",
                 "value": 72
+            },
+            {
+                "trait_type": "Shape",
+                "value": "circle"
             }
         ]
     },
@@ -65,6 +73,10 @@ const metadata = [
             {
                 "trait_type": "Strength",
                 "value": 90
+            },
+            {
+                "trait_type": "Shape",
+                "value": "Square"
             }
         ]
     },
@@ -88,6 +100,10 @@ const metadata = [
             {
                 "trait_type": "Strength",
                 "value": 83
+            },
+            {
+                "trait_type": "Shape",
+                "value": "Rectangle"
             }
         ]
     },
@@ -111,6 +127,10 @@ const metadata = [
             {
                 "trait_type": "Strength",
                 "value": 68
+            },
+            {
+                "trait_type": "Shape",
+                "value": "square"
             }
         ]
     },
@@ -134,6 +154,10 @@ const metadata = [
             {
                 "trait_type": "Strength",
                 "value": 60
+            },
+            {
+                "trait_type": "Shape",
+                "value": "triangle"
             }
         ]
     },
@@ -157,6 +181,10 @@ const metadata = [
             {
                 "trait_type": "Strength",
                 "value": 83
+            },
+            {
+                "trait_type": "Shape",
+                "value": "Rectangle"
             }
         ]
     },
@@ -180,6 +208,10 @@ const metadata = [
             {
                 "trait_type": "Strength",
                 "value": 50
+            },
+            {
+                "trait_type": "Shape",
+                "value": "Circle"
             }
         ]
     },
@@ -203,6 +235,10 @@ const metadata = [
             {
                 "trait_type": "Strength",
                 "value": 100
+            },
+            {
+                "trait_type": "Shape",
+                "value": "oval"
             }
         ]
     },
@@ -226,6 +262,10 @@ const metadata = [
             {
                 "trait_type": "Strength",
                 "value": 90
+            },
+            {
+                "trait_type": "Shape",
+                "value": "Rectangle"
             }
         ]
     }
