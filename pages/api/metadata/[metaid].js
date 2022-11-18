@@ -23,6 +23,14 @@ const metadata = [
             {
                 "trait_type": "Shape",
                 "value": "Rectangle"
+            },
+            {
+                "trait_type":"width",
+                "value":30
+            },
+            {
+                "trait_type":"height",
+                "value":80
             }
         ]
     },
@@ -50,6 +58,14 @@ const metadata = [
             {
                 "trait_type": "Shape",
                 "value": "circle"
+            },
+            {
+                "trait_type":"width",
+                "value":30
+            },
+            {
+                "trait_type":"height",
+                "value":30
             }
         ]
     },
@@ -77,6 +93,14 @@ const metadata = [
             {
                 "trait_type": "Shape",
                 "value": "Square"
+            },
+            {
+                "trait_type":"width",
+                "value":40
+            },
+            {
+                "trait_type":"height",
+                "value":40
             }
         ]
     },
@@ -104,6 +128,14 @@ const metadata = [
             {
                 "trait_type": "Shape",
                 "value": "Rectangle"
+            },
+            {
+                "trait_type":"width",
+                "value":40
+            },
+            {
+                "trait_type":"height",
+                "value":20
             }
         ]
     },
@@ -131,6 +163,14 @@ const metadata = [
             {
                 "trait_type": "Shape",
                 "value": "square"
+            },
+            {
+                "trait_type":"width",
+                "value":50
+            },
+            {
+                "trait_type":"height",
+                "value":50
             }
         ]
     },
@@ -158,6 +198,14 @@ const metadata = [
             {
                 "trait_type": "Shape",
                 "value": "triangle"
+            },
+            {
+                "trait_type":"width",
+                "value":20
+            },
+            {
+                "trait_type":"height",
+                "value":70
             }
         ]
     },
@@ -185,6 +233,14 @@ const metadata = [
             {
                 "trait_type": "Shape",
                 "value": "Rectangle"
+            },
+            {
+                "trait_type":"width",
+                "value":60
+            },
+            {
+                "trait_type":"height",
+                "value":20
             }
         ]
     },
@@ -212,6 +268,14 @@ const metadata = [
             {
                 "trait_type": "Shape",
                 "value": "Circle"
+            },
+            {
+                "trait_type":"width",
+                "value":20
+            },
+            {
+                "trait_type":"height",
+                "value":20
             }
         ]
     },
@@ -239,6 +303,14 @@ const metadata = [
             {
                 "trait_type": "Shape",
                 "value": "oval"
+            },
+            {
+                "trait_type":"width",
+                "value":20
+            },
+            {
+                "trait_type":"height",
+                "value":30
             }
         ]
     },
@@ -266,6 +338,14 @@ const metadata = [
             {
                 "trait_type": "Shape",
                 "value": "Rectangle"
+            },
+            {
+                "trait_type":"width",
+                "value":20
+            },
+            {
+                "trait_type":"height",
+                "value":80
             }
         ]
     }
